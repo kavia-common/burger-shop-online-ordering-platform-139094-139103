@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@200;400;500;700&family=Sansita+Swashed:wght@400;700&display=swap');
+
+:root{
+  --color-12372a:#12372a;
+  --color-000000:#000000;
+  --color-fbfada:#fbfada;
+  --color-adbc9f:#adbc9f;
+  --color-ffffff:#ffffff;
+  --color-d9d9d9:#d9d9d9;
+
+  --font-sansita:"Sansita Swashed", cursive, sans-serif;
+  --font-lexend:"Lexend Zetta", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+
+  --typo-11-size:144px;
+  --typo-11-lh:172.8px;
+  --typo-11-weight:700;
+  --typo-11-color:var(--color-fbfada);
+
+  --typo-12-size:50px;
+  --typo-12-lh:62.5px;
+  --typo-12-weight:700;
+  --typo-12-color:var(--color-adbc9f);
+
+  --typo-13-size:20px;
+  --typo-13-lh:25px;
+  --typo-13-weight:700;
+  --typo-13-color:var(--color-adbc9f);
+
+  --typo-14-size:25px;
+  --typo-14-lh:30px;
+  --typo-14-weight:400;
+  --typo-14-color:var(--color-fbfada);
+
+  --typo-15-size:50px;
+  --typo-15-lh:62.5px;
+  --typo-15-weight:700;
+  --typo-15-color:var(--color-fbfada);
+
+  --radius-5:5px;
+  --radius-20:20px;
+  --radius-25:25px;
+}
+
+.wrapper{
+  width:100%;
+  height:100%;
+  overflow:auto;
+  background:var(--color-12372a);
+}
+.scaler{
+  width:1728px;
+  height:1117px;
+  transform-origin: top left;
+  position: relative;
+}
+.canvas{
+  position:relative;
+  width:1728px;
+  height:1117px;
+  background:var(--color-12372a);
+  overflow:hidden;
+}
+.abs{position:absolute}
+.ellipse{border-radius:50%}
+
+.textBurgerClub{
+  font-family:var(--font-sansita);
+  font-size:var(--typo-11-size);
+  line-height:var(--typo-11-lh);
+  font-weight:var(--typo-11-weight);
+  color:var(--typo-11-color);
+  text-align:center;
+}
+.textTheUltimate{
+  font-family:var(--font-lexend);
+  font-size:var(--typo-12-size);
+  line-height:var(--typo-12-lh);
+  font-weight:var(--typo-12-weight);
+  color:var(--typo-12-color);
+  text-align:center;
+}
+.textSlogan{
+  font-family:var(--font-lexend);
+  font-size:var(--typo-13-size);
+  line-height:var(--typo-13-lh);
+  font-weight:var(--typo-13-weight);
+  color:var(--typo-13-color);
+  text-align:center;
+}
+.textNav{
+  font-family:var(--font-sansita);
+  font-size:var(--typo-14-size);
+  line-height:var(--typo-14-lh);
+  font-weight:var(--typo-14-weight);
+  color:var(--typo-14-color);
+  text-align:left;
+}
+.textBrand{
+  font-family:var(--font-lexend);
+  font-size:var(--typo-15-size);
+  line-height:var(--typo-15-lh);
+  font-weight:var(--typo-15-weight);
+  color:var(--typo-15-color);
+  text-align:center;
+}
+
+.ellipse2{left:969px;top:798px;width:681px;height:69px;background:var(--color-000000)}
+.ellipse1{left:969px;top:161px;width:721px;height:748px; background:transparent}
+
+.group1{left:30px;top:435px;width:910px;height:246px}
+.textBurgerClubPos{left:30px;top:460.493px;width:910px;height:220.508px}
+.textTheUltimatePos{left:166.16px;top:435px;width:638.815px;height:80.301px}
+.textSloganPos{left:224.16px;top:645px;width:523px;height:25px}
+
+.heroRect{
+  left:678px;top:67px;width:1050px;height:936px;
+  background:var(--color-000000);
+}
+
+.frame5{left:216px;top:865px;width:120px;height:120px;background:var(--color-ffffff);border-radius:var(--radius-20)}
+.frame6{left:356px;top:865px;width:120px;height:120px;background:var(--color-ffffff);border-radius:var(--radius-20)}
+.frame7{left:496px;top:865px;width:120px;height:120px;background:var(--color-ffffff);border-radius:var(--radius-20)}
+.frame8{left:636px;top:865px;width:120px;height:120px;background:var(--color-ffffff);border-radius:var(--radius-20)}
+
+.dots{left:824px;top:1019px;width:80px;height:20px}
+.dot{width:20px;height:20px;background:var(--color-d9d9d9);border-radius:50%}
+.dot1{left:824px;top:1019px}
+.dot2{left:854px;top:1019px}
+.dot3{left:884px;top:1019px}
+
+.navbar{left:0px;top:20px;width:1728px;height:100px; border-radius:var(--radius-25)}
+.navFrame1{left:544px;top:20px;width:262px;height:100px;background:var(--color-ffffff)}
+.navFrame2{left:664px;top:20px;width:274px;height:100px;background:var(--color-ffffff)}
+.navFrame3{left:804px;top:20px;width:262px;height:100px;background:var(--color-ffffff)}
+.navFrame4{left:954px;top:20px;width:262px;height:100px;background:var(--color-ffffff)}
+
+.textHome{left:641px;top:57px;width:68px;height:26px}
+.textAbout{left:892px;top:57px;width:86px;height:26px}
+.textShop{left:1051px;top:57px;width:68px;height:26px}
+.textMenu{left:767px;top:57px;width:68px;height:26px}
+.textBrandPos{left:12px;top:54px;width:385px;height:31px}
+
+.scalerResponsive{}
+@media (max-width: 1728px){
+  .scalerResponsive{
+    transform: scale(calc(100vw / 1728));
+  }
+}

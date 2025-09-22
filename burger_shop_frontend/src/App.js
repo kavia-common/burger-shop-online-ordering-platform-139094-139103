@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Desktop1 from './components/Desktop1';
+import Desktop2 from './components/Desktop2';
 
 // PUBLIC_INTERFACE
 function App() {
   const [theme, setTheme] = useState('light');
+  const [view, setView] = useState('desktop1');
 
-  // Effect to apply theme to document element
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
   }, [theme]);
@@ -16,9 +17,15 @@ function App() {
     setTheme(prevTheme => prevTheme === 'light' ? 'dark' : 'light');
   };
 
+  // PUBLIC_INTERFACE
+  const renderView = () => {
+    if (view === 'desktop2') return <Desktop2 />;
+    return <Desktop1 />;
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="App-header" style={{ minHeight: 'auto', padding: 16 }}>
         <button 
           className="theme-toggle" 
           onClick={toggleTheme}
@@ -26,22 +33,20 @@ function App() {
         >
           {theme === 'light' ? '🌙 Dark' : '☀️ Light'}
         </button>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          Current theme: <strong>{theme}</strong>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
+        <nav aria-label="Screen Switcher" style={{ display: 'flex', gap: 12, justifyContent: 'center', marginTop: 12 }}>
+          <button onClick={() => setView('desktop1')} style={{ padding: '8px 12px', borderRadius: 8, border: '1px solid #e5e7eb', cursor: 'pointer' }}>
+            Desktop-1
+          </button>
+          <button onClick={() => setView('desktop2')} style={{ padding: '8px 12px', borderRadius: 8, border: '1px solid #e5e7eb', cursor: 'pointer' }}>
+            Desktop-2
+          </button>
+        </nav>
       </header>
+
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
+        {renderView()}
+      </div>
     </div>
   );
 }
