@@ -1,0 +1,110 @@
+#desktop-1-13-2 .ellipse-2{left:969px;top:798px;width:681px;height:69px}
+#desktop-1-13-2 .ellipse-1{left:969px;top:161px;width:721px;height:748px}
+
+#desktop-1-13-2 .group-1{left:30px;top:435px;width:910px;height:246px}
+#desktop-1-13-2 .text-burger-club{left:30px;top:460.493px;width:910px;height:220.508px}
+#desktop-1-13-2 .text-the-ultimate{left:166.16px;top:435px;width:638.815px;height:80.301px}
+#desktop-1-13-2 .text-slogan{left:224.16px;top:645px;width:523px;height:25px}
+
+#desktop-1-13-2 .hero-rect{left:678px;top:67px;width:1050px;height:936px}
+
+#desktop-1-13-2 .frame-5{left:216px;top:865px;width:120px;height:120px}
+#desktop-1-13-2 .frame-6{left:356px;top:865px;width:120px;height:120px}
+#desktop-1-13-2 .frame-7{left:496px;top:865px;width:120px;height:120px}
+#desktop-1-13-2 .frame-8{left:636px;top:865px;width:120px;height:120px}
+
+#desktop-1-13-2 .dots{left:824px;top:1019px;width:80px;height:20px}
+#desktop-1-13-2 .dot-1{left:824px;top:1019px;width:20px;height:20px}
+#desktop-1-13-2 .dot-2{left:854px;top:1019px;width:20px;height:20px}
+#desktop-1-13-2 .dot-3{left:884px;top:1019px;width:20px;height:20px}
+
+#desktop-1-13-2 .navbar{left:0px;top:20px;width:1728px;height:100px}
+#desktop-1-13-2 .nav-frame-1{left:544px;top:20px;width:262px;height:100px}
+#desktop-1-13-2 .nav-frame-3{left:804px;top:20px;width:262px;height:100px}
+#desktop-1-13-2 .nav-frame-4{left:954px;top:20px;width:262px;height:100px}
+#desktop-1-13-2 .nav-frame-2{left:664px;top:20px;width:274px;height:100px}
+
+#desktop-1-13-2 .text-home{left:641px;top:57px;width:68px;height:26px}
+#desktop-1-13-2 .text-about{left:892px;top:57px;width:86px;height:26px}
+#desktop-1-13-2 .text-shop{left:1051px;top:57px;width:68px;height:26px}
+#desktop-1-13-2 .text-menu{left:767px;top:57px;width:68px;height:26px}
+#desktop-1-13-2 .text-brand{left:12px;top:54px;width:385px;height:31px}
+
+/* Visual specifics */
+#desktop-1-13-2 .ellipse-1{border-radius:50%; background:transparent}
+#desktop-1-13-2 .ellipse-2{border-radius:50%}
+#desktop-1-13-2 .hero-rect{
+  background:var(--color-000000); /* placeholder dark fill since Figma node is rectangle without style_ref; using black for contrast */
+  border-radius:0;
+}
+
+/* Style application for frames and dots */
+#desktop-1-13-2 .frame-5,
+#desktop-1-13-2 .frame-6,
+#desktop-1-13-2 .frame-7,
+#desktop-1-13-2 .frame-8{
+  background:var(--color-ffffff);
+  border-radius:var(--radius-20);
+}
+#desktop-1-13-2 .dot-1,
+#desktop-1-13-2 .dot-2,
+#desktop-1-13-2 .dot-3{
+  background:var(--color-d9d9d9);
+  border-radius:50%;
+}
+
+/* Navbar sub-frames have white background per style_7 */
+#desktop-1-13-2 .nav-frame-1,
+#desktop-1-13-2 .nav-frame-2,
+#desktop-1-13-2 .nav-frame-3,
+#desktop-1-13-2 .nav-frame-4{
+  background:var(--color-ffffff);
+}
+
+/* Text styles from typography tokens */
+#desktop-1-13-2 .text-burger-club{ /* typo_11 */
+  font-family:var(--font-sansita);
+  font-size:var(--typo-11-size);
+  line-height:var(--typo-11-lh);
+  font-weight:var(--typo-11-weight);
+  color:var(--typo-11-color);
+  text-align:center;
+}
+#desktop-1-13-2 .text-the-ultimate{ /* typo_12 */
+  font-family:var(--font-lexend);
+  font-size:var(--typo-12-size);
+  line-height:var(--typo-12-lh);
+  font-weight:var(--typo-12-weight);
+  color:var(--typo-12-color);
+  text-align:center;
+}
+#desktop-1-13-2 .text-slogan{ /* typo_13 */
+  font-family:var(--font-lexend);
+  font-size:var(--typo-13-size);
+  line-height:var(--typo-13-lh);
+  font-weight:var(--typo-13-weight);
+  color:var(--typo-13-color);
+  text-align:center;
+}
+#desktop-1-13-2 .text-home,
+#desktop-1-13-2 .text-about,
+#desktop-1-13-2 .text-shop,
+#desktop-1-13-2 .text-menu{ /* typo_14 */
+  font-family:var(--font-sansita);
+  font-size:var(--typo-14-size);
+  line-height:var(--typo-14-lh);
+  font-weight:var(--typo-14-weight);
+  color:var(--typo-14-color);
+  text-align:left;
+}
+#desktop-1-13-2 .text-brand{ /* typo_15 */
+  font-family:var(--font-lexend);
+  font-size:var(--typo-15-size);
+  line-height:var(--typo-15-lh);
+  font-weight:var(--typo-15-weight);
+  color:var(--typo-15-color);
+  text-align:center;
+}
+
+/* Layering to respect visual hierarchy (later nodes on top) */
+#desktop-1-13-2 .navbar{z-index:10}

@@ -1,0 +1,155 @@
+:root{
+  /* Color tokens from design system */
+  --color-12372a:#12372a;
+  --color-000000:#000000;
+  --color-fbfada:#fbfada;
+  --color-adbc9f:#adbc9f;
+  --color-ffffff:#ffffff;
+  --color-d9d9d9:#d9d9d9;
+  --color-2a2a2a:#2a2a2a;
+  --color-3c3b3b:#3c3b3b;
+
+  /* Typography tokens */
+  --font-sansita:"Sansita Swashed", cursive, sans-serif;
+  --font-lexend:"Lexend Zetta", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+
+  /* Typo presets used on this screen */
+  /* typo_11: Sansita Swashed 144/172.8, 700, color #fbfada */
+  --typo-11-size:144px;
+  --typo-11-lh:172.8px;
+  --typo-11-weight:700;
+  --typo-11-color:var(--color-fbfada);
+
+  /* typo_12: Lexend Zetta 50/62.5, 700, color #adbc9f */
+  --typo-12-size:50px;
+  --typo-12-lh:62.5px;
+  --typo-12-weight:700;
+  --typo-12-color:var(--color-adbc9f);
+
+  /* typo_13: Lexend Zetta 20/25, 700, color #adbc9f */
+  --typo-13-size:20px;
+  --typo-13-lh:25px;
+  --typo-13-weight:700;
+  --typo-13-color:var(--color-adbc9f);
+
+  /* typo_14: Sansita Swashed 25/30, 400, color #fbfada */
+  --typo-14-size:25px;
+  --typo-14-lh:30px;
+  --typo-14-weight:400;
+  --typo-14-color:var(--color-fbfada);
+
+  /* typo_15: Lexend Zetta 50/62.5, 700, color #fbfada */
+  --typo-15-size:50px;
+  --typo-15-lh:62.5px;
+  --typo-15-weight:700;
+  --typo-15-color:var(--color-fbfada);
+
+  /* Radii tokens */
+  --radius-5:5px;
+  --radius-20:20px;
+  --radius-25:25px;
+}
+
+/* Reset + base */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:var(--color-12372a);
+  font-family:var(--font-lexend);
+  color:var(--color-ffffff);
+}
+
+/* Canvas that mimics the Figma frame size exactly */
+.canvas{
+  position:relative;
+  width:1728px;
+  height:1117px;
+  background:var(--color-12372a); /* style_0 */
+  overflow:hidden;
+}
+
+/* Absolute utility */
+.abs{position:absolute}
+
+/* Ellipse helper: make perfect ellipse by 50% radius */
+.ellipse{border-radius:50%}
+
+/* Typography utility classes mapped to tokens */
+.typo-11{
+  font-family:var(--font-sansita);
+  font-size:var(--typo-11-size);
+  line-height:var(--typo-11-lh);
+  font-weight:var(--typo-11-weight);
+  letter-spacing:0;
+  color:var(--typo-11-color);
+  text-align:center;
+}
+.typo-12{
+  font-family:var(--font-lexend);
+  font-size:var(--typo-12-size);
+  line-height:var(--typo-12-lh);
+  font-weight:var(--typo-12-weight);
+  letter-spacing:0;
+  color:var(--typo-12-color);
+  text-align:center;
+}
+.typo-13{
+  font-family:var(--font-lexend);
+  font-size:var(--typo-13-size);
+  line-height:var(--typo-13-lh);
+  font-weight:var(--typo-13-weight);
+  letter-spacing:0;
+  color:var(--typo-13-color);
+  text-align:center;
+}
+.typo-14{
+  font-family:var(--font-sansita);
+  font-size:var(--typo-14-size);
+  line-height:var(--typo-14-lh);
+  font-weight:var(--typo-14-weight);
+  letter-spacing:0;
+  color:var(--typo-14-color);
+  text-align:left;
+}
+.typo-15{
+  font-family:var(--font-lexend);
+  font-size:var(--typo-15-size);
+  line-height:var(--typo-15-lh);
+  font-weight:var(--typo-15-weight);
+  letter-spacing:0;
+  color:var(--typo-15-color);
+  text-align:center;
+}
+
+/* Style tokens (fills, borders, radii) */
+.fill-000{background:var(--color-000000)}
+.fill-fff{background:var(--color-ffffff)}
+.fill-d9{background:var(--color-d9d9d9)}
+.fill-123{background:var(--color-12372a)}
+.fill-adb{background:var(--color-adbc9f)}
+.fill-fbf{background:var(--color-fbfada)}
+
+.radius-20{border-radius:var(--radius-20)}
+.radius-25{border-radius:var(--radius-25)}
+.radius-5{border-radius:var(--radius-5)}
+
+/* Navbar frame visual (no explicit background, just positioning and rounding if needed) */
+.navbar{border-radius:var(--radius-25)}
+
+/* Responsive scale-down to preserve visual integrity on smaller screens */
+.wrapper{
+  width:100%;
+  height:100%;
+  overflow:auto;
+}
+.scaler{
+  width:1728px;
+  height:1117px;
+  transform-origin: top left;
+}
+@media (max-width: 1728px){
+  .scaler{
+    transform: scale(calc(100vw / 1728));
+  }
+}
