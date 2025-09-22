@@ -1,0 +1,4 @@
+{
+    "command": "PORT=<port> HOST=<host> BROWSER=none npm start",
+    "working_directory": "/home/kavia/workspace/code-generation/burger-shop-online-ordering-platform-139094-139103/burger_shop_frontend"
+}
